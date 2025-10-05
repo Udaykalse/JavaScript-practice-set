@@ -1,0 +1,393 @@
+/*------ Large Devices (1200px and up) ------*/
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
+/*------ Medium Devices (992px to 1199px) ------*/
+@media only screen and (max-width: 1199px) {
+    :root {
+        --font-size-5xl: 4.2rem;
+        --font-size-4xl: 3.2rem;
+        --font-size-3xl: 2.6rem;
+    }
+    
+    .hero-content {
+        gap: var(--space-12);
+    }
+    
+    .footer-content {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+    
+    .footer-section:last-child {
+        grid-column: 1 / -1;
+        margin-top: var(--space-8);
+    }
+}
+
+/*------ Tablets (768px to 991px) ------*/
+@media only screen and (max-width: 991px) {
+    :root {
+        --font-size-5xl: 3.6rem;
+        --font-size-4xl: 2.8rem;
+        --font-size-3xl: 2.2rem;
+        --font-size-2xl: 1.8rem;
+    }
+    
+    .container {
+        padding: 0 var(--space-5);
+    }
+    
+    section {
+        padding: var(--space-16) 0;
+    }
+    
+    /* Navigation */
+    .nav-menu {
+        position: fixed;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        flex-direction: column;
+        padding: var(--space-8);
+        box-shadow: var(--shadow-lg);
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all var(--transition-base);
+    }
+    
+    .nav-menu.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+        gap: var(--space-4);
+    }
+    
+    .nav-actions {
+        flex-direction: column;
+        width: 100%;
+        gap: var(--space-4);
+    }
+    
+    .nav-toggle {
+        display: block;
+    }
+    
+    /* Hero Section */
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-10);
+        text-align: center;
+    }
+    
+    .hero-stats {
+        justify-content: center;
+    }
+    
+    .hero-actions {
+        justify-content: center;
+    }
+    
+    .floating-cards {
+        display: none;
+    }
+    
+    /* Features Section */
+    .features-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    
+    /* Courses Section */
+    .courses-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    
+    /* Download App Section */
+    .app-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-12);
+        text-align: center;
+    }
+    
+    .app-feature {
+        justify-content: center;
+    }
+    
+    .download-buttons {
+        justify-content: center;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-10);
+    }
+    
+    .footer-section:first-child {
+        grid-column: 1 / -1;
+    }
+}
+
+/*------ Mobile Devices (576px to 767px) ------*/
+@media only screen and (max-width: 767px) {
+    :root {
+        --font-size-5xl: 3rem;
+        --font-size-4xl: 2.4rem;
+        --font-size-3xl: 2rem;
+        --font-size-2xl: 1.7rem;
+        --font-size-xl: 1.5rem;
+    }
+    
+    .container {
+        padding: 0 var(--space-4);
+    }
+    
+    section {
+        padding: var(--space-12) 0;
+    }
+    
+    /* Hero Section */
+    .hero-stats {
+        gap: var(--space-6);
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-large {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    /* Features Section */
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Courses Section */
+    .courses-filter {
+        gap: var(--space-3);
+    }
+    
+    .filter-btn {
+        padding: var(--space-3) var(--space-4);
+        font-size: var(--font-size-sm);
+    }
+    
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Testimonials Section */
+    .testimonial-card {
+        padding: var(--space-6);
+    }
+    
+    /* Newsletter Section */
+    .input-group {
+        flex-direction: column;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
+    }
+    
+    .footer-bottom-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-bottom-links {
+        justify-content: center;
+    }
+}
+
+/*------ Small Mobile Devices (575px and down) ------*/
+@media only screen and (max-width: 575px) {
+    :root {
+        --font-size-5xl: 2.6rem;
+        --font-size-4xl: 2.2rem;
+        --font-size-3xl: 1.8rem;
+        --font-size-base: 1.4rem;
+    }
+    
+    .container {
+        padding: 0 var(--space-3);
+    }
+    
+    /* Hero Section */
+    .hero-stats {
+        flex-direction: column;
+        gap: var(--space-4);
+    }
+    
+    .stat {
+        display: flex;
+        align-items: center;
+        gap: var(--space-3);
+    }
+    
+    .stat-number {
+        margin-bottom: 0;
+        font-size: var(--font-size-2xl);
+    }
+    
+    /* Courses Section */
+    .course-meta {
+        flex-direction: column;
+        gap: var(--space-3);
+        align-items: flex-start;
+    }
+    
+    /* Download App Section */
+    .download-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .download-btn img {
+        height: 45px;
+    }
+    
+    /* Modal */
+    .modal-content {
+        padding: var(--space-6);
+        margin: var(--space-4);
+    }
+    
+    /* Scroll Top Button */
+    .scroll-top-btn {
+        bottom: var(--space-4);
+        right: var(--space-4);
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/*------ Extra Small Devices (400px and down) ------*/
+@media only screen and (max-width: 400px) {
+    :root {
+        --font-size-5xl: 2.2rem;
+        --font-size-4xl: 2rem;
+    }
+    
+    .hero-actions .btn {
+        width: 100%;
+    }
+    
+    .courses-filter {
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: var(--space-2);
+    }
+    
+    .filter-btn {
+        white-space: nowrap;
+    }
+}
+
+/*------ High DPI Screens ------*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 192dpi) {
+    .hero-image img,
+    .course-image img,
+    .testimonial-avatar img {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}
+
+/*------ Print Styles ------*/
+@media print {
+    .nav-toggle,
+    .scroll-top-btn,
+    .hero-actions,
+    .courses-actions,
+    .download-buttons,
+    .newsletter-form,
+    .social-links {
+        display: none !important;
+    }
+    
+    .hero,
+    .features,
+    .courses,
+    .testimonials,
+    .download-app {
+        break-inside: avoid;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+        color: #000;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: #000;
+    }
+}
+
+/*------ Reduced Motion ------*/
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/*------ Dark Mode Support ------*/
+@media (prefers-color-scheme: dark) {
+    :root {
+        --white: #1a1a1a;
+        --white-shade-1: #2d2d2d;
+        --white-shade-2: #3d3d3d;
+        --gray-100: #4d4d4d;
+        --gray-200: #5d5d5d;
+        --gray-300: #6d6d6d;
+        --gray-400: #8d8d8d;
+        --gray-500: #adadad;
+        --gray-600: #cdcdcd;
+        --gray-700: #ededed;
+        --black: #ffffff;
+    }
+    
+    .hero {
+        background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+    }
+    
+    .features {
+        background: var(--white-shade-1);
+    }
+    
+    .download-app {
+        background: var(--white-shade-1);
+    }
+}
+
+/*------ Orientation Specific ------*/
+@media (orientation: landscape) and (max-height: 500px) {
+    .hero {
+        min-height: 150vh;
+    }
+    
+    .hero-content {
+        padding: var(--space-12) 0;
+    }
+}

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Study Smart - Transform your learning experience with engaging courses and top educators">
+    <title>Study Smart - Responsive Education Website</title>
+    
+    <!------ Font Awesome ------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!------ Google Fonts ------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!------ Stylesheets ------>
+    <link rel="stylesheet" href="./style/queries.css">
+    <link rel="stylesheet" href="./style/animations.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <!------ Loading Screen ------>
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>Loading Study Smart...</p>
+        </div>
+    </div>
+
+    <!------ Scroll To Top Button ------>
+    <button id="scroll-top" class="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!------ Header ------>
+    <header id="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="#home" id="logo" class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    Study Smart
+                </a>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#features" class="nav-link">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#courses" class="nav-link">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#testimonial" class="nav-link">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#download-app" class="nav-link">App</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="nav-actions">
+                        <button class="btn login-btn" id="login-btn">Login</button>
+                        <button class="btn primary-btn signup-btn" id="signup-btn">Sign Up</button>
+                    </div>
+                </div>
+
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!------ Login/Signup Modal ------>
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="auth-forms">
+                <div class="auth-form active" id="login-form">
+                    <h3>Welcome Back</h3>
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="btn primary-btn full-width">Login</button>
+                    </form>
+                    <p class="auth-switch">Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+                </div>
+                
+                <div class="auth-form" id="signup-form">
+                    <h3>Join Study Smart</h3>
+                    <form id="signupForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="btn primary-btn full-width">Sign Up</button>
+                    </form>
+                    <p class="auth-switch">Already have an account? <a href="#" id="show-login">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------ Section: Hero ------>
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title" data-aos="fade-up">
+                        Transform Your <span class="highlight">Learning</span> Experience
+                    </h1>
+                    <p class="hero-description" data-aos="fade-up" data-aos-delay="100">
+                        Join thousands of students mastering new skills with our interactive courses, 
+                        expert instructors, and personalized learning paths.
+                    </p>
+                    <div class="hero-stats" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat">
+                            <span class="stat-number">50K+</span>
+                            <span class="stat-label">Students</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Courses</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">95%</span>
+                            <span class="stat-label">Success Rate</span>
+                        </div>
+                    </div>
+                    <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+                        <button class="btn primary-btn btn-large">
+                            Start Learning Free
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <button class="btn secondary-btn btn-large watch-demo">
+                            <i class="fas fa-play"></i>
+                            Watch Demo
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hero-visual" data-aos="fade-left" data-aos-delay="400">
+                    <div class="hero-image">
+                        <img src="./assets/hero-image.svg" alt="Online Learning" loading="lazy">
+                    </div>
+                    <div class="floating-cards">
+                        <div class="floating-card card-1">
+                            <i class="fas fa-trophy"></i>
+                            <span>Top Rated Courses</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-users"></i>
+                            <span>Expert Instructors</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certification</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------ Section: Features ------>
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Why Choose Study Smart?</h2>
+                <p class="section-description">
+                    Experience learning reimagined with cutting-edge features designed for your success
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <h3>Interactive Videos</h3>
+                    <p>Engage with interactive video lessons that include quizzes, annotations, and progress tracking.</p>
+                    <div class="feature-badge">New</div>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Expert Instructors</h3>
+                    <p>Learn from industry professionals and experienced educators passionate about teaching.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Self-Paced Learning</h3>
+                    <p>Study at your own convenience with lifetime access to all course materials and updates.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Friendly</h3>
+                    <p>Access courses on any device with our responsive platform and dedicated mobile app.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certification</h3>
+                    <p>Earn recognized certificates to showcase your skills and advance your career.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Community Support</h3>
+                    <p>Join discussion forums and get support from instructors and fellow students.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------ Section: Courses ------>
+    <section class="courses" id="courses">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Popular Courses</h2>
+                <p class="section-description">
+                    Discover our most popular courses loved by thousands of students worldwide
+                </p>
+            </div>
+            
+            <div class="courses-filter" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All Courses</button>
+                <button class="filter-btn" data-filter="development">Development</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="business">Business</button>
+                <button class="filter-btn" data-filter="marketing">Marketing</button>
+            </div>
+            
+            <div class="courses-grid" id="courses-grid">
+                <!-- Courses will be dynamically loaded -->
+            </div>
+            
+            <div class="courses-actions" data-aos="fade-up">
+                <button class="btn secondary-btn btn-large" id="load-more-courses">
+                    View All Courses
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!------ Section: Testimonials ------>
+    <section class="testimonials" id="testimonial">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Student Success Stories</h2>
+                <p class="section-description">
+                    Hear from our students who transformed their careers with Study Smart
+                </p>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonials-track" id="testimonials-track">
+                    <!-- Testimonials will be dynamically loaded -->
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn" id="prev-testimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-btn next-btn" id="next-testimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="slider-dots" id="slider-dots">
+                    <!-- Dots will be dynamically generated -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------ Section: Download App ------>
+    <section class="download-app" id="download-app">
+        <div class="container">
+            <div class="app-content">
+                <div class="app-info" data-aos="fade-right">
+                    <h2>Learn On The Go</h2>
+                    <p class="app-description">
+                        Download our mobile app to access courses anytime, anywhere. 
+                        Sync your progress across all devices and learn offline.
+                    </p>
+                    
+                    <div class="app-features">
+                        <div class="app-feature">
+                            <i class="fas fa-sync-alt"></i>
+                            <div>
+                                <h4>Progress Sync</h4>
+                                <p>Seamlessly continue where you left off</p>
+                            </div>
+                        </div>
+                        
+                        <div class="app-feature">
+                            <i class="fas fa-download"></i>
+                            <div>
+                                <h4>Offline Access</h4>
+                                <p>Download courses and learn without internet</p>
+                            </div>
+                        </div>
+                        
+                        <div class="app-feature">
+                            <i class="fas fa-bell"></i>
+                            <div>
+                                <h4>Smart Reminders</h4>
+                                <p>Never miss a study session</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="download-buttons">
+                        <a href="#" class="download-btn">
+                            <img src="assets/images/google-play.png" alt="Google Play">
+                        </a>
+                        <a href="#" class="download-btn">
+                            <img src="assets/images/app-store.png" alt="App Store">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="app-preview" data-aos="fade-left">
+                    <div class="phone-mockup">
+                        <img src="assets/images/app-screens.png" alt="App Screens">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------ Section: Newsletter ------>
+    <section class="newsletter" id="contact">
+        <div class="container">
+            <div class="newsletter-content" data-aos="fade-up">
+                <h2>Stay Updated</h2>
+                <p>Get the latest course updates and learning tips delivered to your inbox</p>
+                
+                <form class="newsletter-form" id="newsletter-form">
+                    <div class="input-group">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn primary-btn">
+                            Subscribe
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <p class="newsletter-note">No spam, unsubscribe at any time</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!------ Footer ------>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        Study Smart
+                    </div>
+                    <p class="footer-description">
+                        Empowering learners worldwide with quality education and innovative learning solutions.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#testimonial">Testimonials</a></li>
+                        <li><a href="#download-app">Download App</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                        <li><a href="#">Business</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Education Street, Learn City</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@studysmart.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Study Smart. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!------ Scripts ------>
+    <script src="./script/script.js"></script>
+    <script src="./script/formValidation.js"></script>
+    <script src="./script/scrollEffects.js"></script>
+</body>
+</html>
