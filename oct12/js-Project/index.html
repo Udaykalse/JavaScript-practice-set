@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HelpHub – Online Donation Platform</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar">
+        <h1 class="logo">HelpHub</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#causes">Causes</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Make a Difference Today</h2>
+            <p>Your small donation can bring a big change in someone's life.</p>
+            <button class="btn donate-now">Donate Now</button>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stat-item">
+            <i class="fas fa-users"></i>
+            <h3>5000+</h3>
+            <p>People Helped</p>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-hand-holding-heart"></i>
+            <h3>1200+</h3>
+            <p>Donations Made</p>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>50+</h3>
+            <p>Cities Covered</p>
+        </div>
+    </section>
+
+    <section id="causes" class="causes">
+        <h2>Our Causes</h2>
+        <div class="cause-container">
+            <div class="cause-card">
+                <img src="./food.webp" alt="Food Donation" />
+                <div class="cause-content">
+                    <h3>Food Donation</h3>
+                    <p>Provide meals to those in need.</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-target="75"></div>
+                    </div>
+                    <p class="progress-text">75% funded</p>
+                    <button class="btn">Donate</button>
+                </div>
+            </div>
+
+            <div class="cause-card">
+                <img src="./clothes.webp" alt="Clothes Donation" />
+                <div class="cause-content">
+                    <h3>Clothes Donation</h3>
+                    <p>Share warmth with the less fortunate.</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-target="60"></div>
+                    </div>
+                    <p class="progress-text">60% funded</p>
+                    <button class="btn">Donate</button>
+                </div>
+            </div>
+
+            <div class="cause-card">
+                <img src="./books.webp" alt="Books Donation" />
+                <div class="cause-content">
+                    <h3>Books Donation</h3>
+                    <p>Help kids learn and grow through education.</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-target="85"></div>
+                    </div>
+                    <p class="progress-text">85% funded</p>
+                    <button class="btn">Donate</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="donationPopup" class="popup hidden">
+        <div class="popup-content">
+            <span id="closePopup" class="close">&times;</span>
+            <h2>Make a Donation</h2>
+            <form id="donationForm">
+                <label>Name</label>
+                <input type="text" id="name" placeholder="Your name" required>
+
+                <label>Email</label>
+                <input type="email" id="email" placeholder="you@example.com" required>
+
+                <label>Donation Type</label>
+                <input type="text" id="donationType" readonly>
+
+                <label>Amount ($)</label>
+                <input type="number" id="amount" placeholder="Enter amount" min="1" required>
+
+                <label>Payment Method</label>
+                <select id="paymentMethod" required>
+                    <option value="">Select payment method</option>
+                    <option value="credit">Credit Card</option>
+                    <option value="debit">Debit Card</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" id="cancelBtn">Cancel</button>
+                    <button type="submit" class="btn">Confirm Donation</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>HelpHub connects kind hearts with local charities to make donations easy and transparent.</p>
+            <div class="stats-display">
+                <strong>Total Donations Made:</strong> <span id="totalDonations">0</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>contact@helphub.org</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+1 (555) 123-4567</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>123 Charity St, Hope City</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 HelpHub. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
