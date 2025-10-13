@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function throttle(fun, limit) {
+    let inThrottle = false;
+    return function (...args) {
+        if (!inThrottle) {
+            fun.apply(this, args);
+            inThrottle = true;
+            setTimeout(() => inThrottle = false, limit);
+        }
+    };
+}
+
+function onScroll() {
+    console.log("Scroll event at:", new Date().toLocaleTimeString());
+}
+
+const throttleScroll = throttle(onScroll, 1000);
+window.addEventListener("scroll", throttleScroll);
+</script>
+
+</body>
+</html>
