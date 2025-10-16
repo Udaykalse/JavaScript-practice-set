@@ -9,6 +9,13 @@ import ReactQ2 from './components/Frontend-Developer-Intern/app2'
 import ReactQ3 from './components/Frontend-Developer-Intern/app3'
 import ReactQ4 from './components/Frontend-Developer-Intern/app4'
 import ReactQ5 from './components/Frontend-Developer-Intern/app5'
+import ReactQ6 from './components/Frontend-Developer-Intern/app6'
+import ReactQ7 from './components/Frontend-Developer-Intern/app7'
+import ReactQ8 from './components/Frontend-Developer-Intern/app8'
+import ReactQ9 from './components/Frontend-Developer-Intern/app9'
+import ReactQ10 from './components/Frontend-Developer-Intern/app10'
+import ReactQ11 from './components/Frontend-Developer-Intern/App11'
+
 import './App.css';
 
 function App() {
@@ -38,7 +45,7 @@ function App() {
         </div>
       ))}
 
-      {[ReactQ1, ReactQ2, ReactQ3, ReactQ4, ReactQ5].map((ReactComponent, index) => (
+      {[ReactQ1, ReactQ2, ReactQ3, ReactQ4, ReactQ5,ReactQ6,ReactQ7,ReactQ8,ReactQ10,ReactQ11].map((ReactComponent, index) => (
         <div key={index} className="component-section react-component">
           <div className="component-header">
             <div className="component-icon">Q{index + 1}</div>
