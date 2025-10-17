@@ -3,14 +3,6 @@ import React, { useEffect, useState } from 'react'
 function app5() {
   const [users, setUsers] = useState([]);
 
-  // useEffect(() => {
-  //   fetch('https://jsonplaceholder.typicode.com/users')
-  //     .then((res) => res.json())
-  //     .then((data) => setUsers(data))
-  //     .catch((err) => console.log(err))
-  //     console.log(users)
-  // }, [])
-
     useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((res) => res.json())
@@ -25,6 +17,7 @@ function app5() {
         {users.map((u) => (
           <li key={u.id}>{u.name}</li>
         ))}
+
       </ul>
     </div>
   )

@@ -1,40 +1,40 @@
-// import Form from './components/Forms/form';
-// import Table1 from './components/Table/table1'
-// import Table2 from './components/Table/table2'
-// import Table3 from './components/Table/table3'
-// import Table4 from './components/Table/table4'
-// import Table5 from './components/Table/table5'
-// import ReactQ1 from './components/Frontend-Developer-Intern/app1'
-// import ReactQ2 from './components/Frontend-Developer-Intern/app2'
-// import ReactQ3 from './components/Frontend-Developer-Intern/app3'
-// import ReactQ4 from './components/Frontend-Developer-Intern/app4'
-// import ReactQ5 from './components/Frontend-Developer-Intern/app5'
-// import ReactQ6 from './components/Frontend-Developer-Intern/app6'
-// import ReactQ7 from './components/Frontend-Developer-Intern/app7'
-// import ReactQ8 from './components/Frontend-Developer-Intern/app8'
-// import ReactQ10 from './components/Frontend-Developer-Intern/app10'
-// import ReactQ11 from './components/Frontend-Developer-Intern/App11'
-// import ReactQ32 from './components/F-day1/app1'
-// import ReactQ12 from './components/F-day1/app2'
-// import ReactQ13 from './components/F-day1/app3'
-// import ReactQ14 from './components/F-day1/app4'
+import Form from './components/Forms/form';
+import Table1 from './components/Table/table1'
+import Table2 from './components/Table/table2'
+import Table3 from './components/Table/table3'
+import Table4 from './components/Table/table4'
+import Table5 from './components/Table/table5'
+import ReactQ1 from './components/Frontend-Developer-Intern/app1'
+import ReactQ2 from './components/Frontend-Developer-Intern/app2'
+import ReactQ3 from './components/Frontend-Developer-Intern/app3'
+import ReactQ4 from './components/Frontend-Developer-Intern/app4'
+import ReactQ5 from './components/Frontend-Developer-Intern/app5'
+import ReactQ6 from './components/Frontend-Developer-Intern/app6'
+import ReactQ7 from './components/Frontend-Developer-Intern/app7'
+import ReactQ8 from './components/Frontend-Developer-Intern/app8'
+import ReactQ10 from './components/Frontend-Developer-Intern/app10'
+import ReactQ11 from './components/Frontend-Developer-Intern/App11'
+import ReactQ32 from './components/F-day1/app1'
+import ReactQ12 from './components/F-day1/app2'
+import ReactQ13 from './components/F-day1/app3'
+import ReactQ14 from './components/F-day1/app4'
 import ReactQ15 from './components/F-day1/app5'
-// import ReactQ16 from './components/F-day1/app6'
-// import ReactQ17 from './components/F-day1/app7'
-// import ReactQ18 from './components/F-day1/app7'
-// import ReactQ19 from './components/F-day1/app8'
-// import ReactQ20 from './components/F-day1/app9'
-// import ReactQ21 from './components/F-day1/app10'
-// import ReactQ22 from './components/F-day1/app11'
-// import ReactQ23 from './components/F-day1/app12'
-// import ReactQ24 from './components/F-day1/app13'
-// import ReactQ25 from './components/F-day1/app14'
-// import ReactQ26 from './components/F-day1/app15'
-// import ReactQ27 from './components/F-day1/app16'
-// import ReactQ28 from './components/F-day1/app17'
-// import ReactQ29 from './components/F-day1/app18'
-// import ReactQ30 from './components/F-day1/app19'
-// import ReactQ31 from './components/F-day1/app20'
+import ReactQ16 from './components/F-day1/app6'
+import ReactQ17 from './components/F-day1/app7'
+import ReactQ18 from './components/F-day1/app7'
+import ReactQ19 from './components/F-day1/app8'
+import ReactQ20 from './components/F-day1/app9'
+import ReactQ21 from './components/F-day1/app10'
+import ReactQ22 from './components/F-day1/app11'
+import ReactQ23 from './components/F-day1/app12'
+import ReactQ24 from './components/F-day1/app13'
+import ReactQ25 from './components/F-day1/app14'
+import ReactQ26 from './components/F-day1/app15'
+import ReactQ27 from './components/F-day1/app16'
+import ReactQ28 from './components/F-day1/app17'
+import ReactQ29 from './components/F-day1/app18'
+import ReactQ30 from './components/F-day1/app19'
+import ReactQ31 from './components/F-day1/app20'
 
 
 
@@ -43,7 +43,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      {/* <div className="component-section form-component">
+      <div className="component-section form-component">
         <div className="component-header">
           <div className="component-icon">F</div>
           <div>
@@ -78,8 +78,7 @@ function App() {
           </div>
           <ReactComponent />
         </div>
-      ))} */}
-      <ReactQ15/>
+      ))}
     </div>
   )
 }
