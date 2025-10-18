@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Start Screen -->
+        <div id="start-screen" class="screen active">
+            <h1>Quiz Challenge</h1>
+            <p>Test your knowledge with this interactive quiz!</p>
+            <button id="start-btn" class="btn">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen">
+            <div class="quiz-header">
+                <div class="progress-bar">
+                    <div id="progress" class="progress"></div>
+                </div>
+                <div class="quiz-info">
+                    <span id="question-count">Question 1/5</span>
+                    <span id="score">Score: 0</span>
+                </div>
+            </div>
+            
+            <div class="quiz-content">
+                <h2 id="question">What is the capital of France?</h2>
+                <div id="options" class="options">
+                </div>
+            </div>
+
+            <div class="quiz-footer">
+                <button id="next-btn" class="btn" disabled>Next Question</button>
+            </div>
+        </div>
+
+        <div id="results-screen" class="screen">
+            <h1>Quiz Completed!</h1>
+            <div class="results">
+                <div id="final-score" class="final-score">Your Score: 0/5</div>
+                <div id="performance-message" class="performance-message"></div>
+            </div>
+            <button id="restart-btn" class="btn">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
